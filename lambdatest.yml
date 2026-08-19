@@ -1,0 +1,28 @@
+user: ${LT_USERNAME}
+accessKey: ${LT_ACCESS_KEY}
+
+build: "Playwright 101 Assignment"
+name: "Playwright Test Suite"
+
+framework: "playwright"
+
+parallelsPerPlatform: 1
+
+network: true
+console: true
+video: true
+tunnel: false
+
+resolution: "1920x1080"
+
+playwrightConfigOptions:
+  testDir: "tests"
+
+platforms:
+  - platform: "Windows 11"
+    browserName: "chrome"
+    browserVersion: "latest"
+
+  - platform: "macOS Sequoia"
+    browserName: "pw-webkit"
+    browserVersion: "latest"
